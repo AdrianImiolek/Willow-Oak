@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav mobile">
     <div class="wrapper">
         <div class="nav__container nav__container--logo">
             <a href="#">
@@ -24,6 +24,7 @@
             </a>
         </div>
     </div>
+
     <div class="nav__container nav__container--links">
         <a href="" class="nav__link">about us</a>
         <a href="" class="nav__link">our works</a>
@@ -37,6 +38,26 @@
 
     </div>
 </nav>
+
+<div class="nav desktop">
+    <div class="wrapper">
+        <div class="nav-flex__items">
+            <div class="nav-flex__item">
+                <a href="#">
+                    <img src="dist/img/willow&oak-white.png" alt="" class="nav__img">
+                </a>
+            </div>
+            <div class="nav-flex__item">
+                <a href="" class="nav__link">about us</a>
+                <a href="" class="nav__link">our works</a>
+                <a href="" class="nav__link">our clients</a>
+                <a href="" class="nav__link">inspirations</a>
+                <a href="" class="nav__link">faq</a>
+                <a href="" class="nav__link">contact us</a>
+            </div>
+        </div>
+    </div>
+</div>
     <header class="header">
         <div class="header__shadow"></div>
         <div class="wrapper">
@@ -52,40 +73,38 @@
             <section class="about-us section">
 
                 <h2 class="about-us__title heading heading-section">about us</h2>
-                <div class="about-us__flex">
-                    <div class="about-us__content">
-                        <img src="/dist/img/atika-mashal-portrait-mobile.jpg" alt="" class="about-us__img">
-                        <div class="about-us__text">
-                            <h3 class="about-us__heading heading">Atika Mashal</h3>
-                            <p class="about-us__introduction">Founded by <strong>Atika Mashal</strong>, a designer known
-                                for
-                                her poetic, grounded approach, Willow & Oak has grown into a collaborative studio where
-                                nature meets nuance. Atika’s work is rooted in organic forms, soft minimalism, and
-                                timeless
-                                palettes that invite stillness and soul.</p>
-                        </div>
+                <div class="about-us__content">
+                    <img src="/dist/img/atika-mashal-portrait-mobile.jpg" alt="" class="about-us__img">
+                    <div class="about-us__text">
+                        <h3 class="about-us__heading heading">Atika Mashal</h3>
+                        <p class="about-us__introduction">Founded by <strong>Atika Mashal</strong>, a designer known
+                            for
+                            her poetic, grounded approach, Willow & Oak has grown into a collaborative studio where
+                            nature meets nuance. Atika’s work is rooted in organic forms, soft minimalism, and
+                            timeless
+                            palettes that invite stillness and soul.</p>
                     </div>
-                    <div class="about-us__content">
-                        <img src="/dist/img/carlos-morandi-portrait-mobile.jpg" alt="" class="about-us__img">
-                        <div class="about-us__text">
-                            <h3 class="about-us__heading heading">Carlos Morandi</h3>
-                            <p class="about-us__introduction">
-                                Joining her is <strong>Carlos Morandi</strong>, a detail-driven designer with a love for
-                                architectural balance and refined materials. Carlos brings structure and precision,
-                                ensuring
-                                that every space is as functional as it is graceful.</p>
-                        </div>
+                </div>
+                <div class="about-us__content">
+                    <img src="/dist/img/carlos-morandi-portrait-mobile.jpg" alt="" class="about-us__img">
+                    <div class="about-us__text">
+                        <h3 class="about-us__heading heading">Carlos Morandi</h3>
+                        <p class="about-us__introduction">
+                            Joining her is <strong>Carlos Morandi</strong>, a detail-driven designer with a love for
+                            architectural balance and refined materials. Carlos brings structure and precision,
+                            ensuring
+                            that every space is as functional as it is graceful.</p>
                     </div>
-                    <div class="about-us__content">
-                        <img src="/dist/img/sarah-connors-portrait-mobile.jpg" alt="" class="about-us__img">
-                        <div class="about-us__text">
-                            <h3 class="about-us__heading heading">Sarah Connors</h3>
-                            <p class="about-us__introduction"><strong>Sarah Connors</strong> completes the trio with a
-                                keen
-                                eye for visual storytelling. Her passion for textures, color harmony, and personal
-                                touches
-                                makes each project deeply intimate and quietly bold.</p>
-                        </div>
+                </div>
+                <div class="about-us__content">
+                    <img src="/dist/img/sarah-connors-portrait-mobile.jpg" alt="" class="about-us__img">
+                    <div class="about-us__text">
+                        <h3 class="about-us__heading heading">Sarah Connors</h3>
+                        <p class="about-us__introduction"><strong>Sarah Connors</strong> completes the trio with a
+                            keen
+                            eye for visual storytelling. Her passion for textures, color harmony, and personal
+                            touches
+                            makes each project deeply intimate and quietly bold.</p>
                     </div>
                 </div>
             </section>
@@ -164,33 +183,6 @@
                     <div class="inspirations__grid-item">
                     </div>
                     <div class="inspirations__grid-item">
-                    </div>
-                </div>
-
-                <div class="inspirations__grid desktop">
-                    <div class="inspirations__grid-item">
-
-                    </div>
-                    <div class="inspirations__grid-item">
-
-                    </div>
-                    <div class="inspirations__grid-item">
-
-                    </div>
-                    <div class="inspirations__grid-item">
-
-                    </div>
-                    <div class="inspirations__grid-item">
-
-                    </div>
-                    <div class="inspirations__grid-item">
-
-                    </div>
-                    <div class="inspirations__grid-item">
-
-                    </div>
-                    <div class="inspirations__grid-item">
-
                     </div>
                 </div>
             </section>
@@ -280,29 +272,43 @@
         </div>
 
         <footer class="footer section" role="contentinfo">
-    <div class="footer__items">
-        <div class="footer__item">
-            <h3 class="footer__item-heading">
-                Contact us
-            </h3>
-            <ul class="footer__item-list">
-                <li>Via phone: 32 555 67 77 </li>
-                <li>Via email: <a href="mailto:willownoak@contact.com">willownoak@contact.com</a></li>
-            </ul>
+    <div class="wrapper">
+        <div class="footer__items">
+            <div class="footer__item">
+                <h3 class="footer__item-heading">
+                    Contact us
+                </h3>
+                <ul class="footer__item-list">
+                    <li>Via phone: 32 555 67 77 </li>
+                    <li>Via email: <a href="mailto:willownoak@contact.com">willownoak@contact.com</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-heading">
+                    Socials
+                </h3>
+                <ul class="footer__item-list">
+                    <li><i class='bx bxl-facebook-circle'></i><a href="#"> facebook.com/willow&oak</a></li>
+                    <li><i class='bx bxl-tiktok'><a href="#"> tiktok.com/@willow&oak</a></i></li>
+                    <li><i class='bx bxl-instagram-alt'></i><a href="#"> instagram.com/willow&oak</a></li>
+                    <li><i class='bx bxl-pinterest'></i><a href="#"> pinterest.com/willow&oak </a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-heading">
+                    Information
+                </h3>
+                <ul class="footer__item-list">
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Work with us</a></li>
+                    <li><a href="#">Share your thoughts</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer__item">
-            <h3 class="footer__item-heading">
-                Socials
-            </h3>
-            <ul class="footer__item-list">
-                <li><i class='bx bxl-facebook-circle'></i><a href="#"> facebook.com/willow&oak</a></li>
-                <li><i class='bx bxl-tiktok'><a href="#"> tiktok.com/@willow&oak</a></i></li>
-                <li><i class='bx bxl-instagram-alt'></i><a href="#"> instagram.com/willow&oak</a></li>
-                <li><i class='bx bxl-pinterest'></i><a href="#"> pinterest.com/willow&oak </a></li>
-            </ul>
-        </div>
+        <p class="footer__text">Made by Adrian Imiołek for </br> &copy;<span class="footer__date"></span> Willow & Oak
+        </p>
     </div>
-    <p class="footer__text">Made by Adrian Imiołek for </br> &copy;<span class="footer__date"></span> Willow & Oak</p>
 </footer>
     </main>
     <script src="dist/js/slider.min.js"></script>
