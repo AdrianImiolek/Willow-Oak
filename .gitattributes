@@ -1,8 +1,8 @@
-dist/js/* linguist-detectable
-dist/css/* linguist-detectable
+js/* linguist-detectable
+css/* linguist-detectable
 
-dist/js/* linguist-vendored=false
-dist/css/* linguist-vendored=false
+js/* linguist-vendored=false
+css/* linguist-vendored=false
 
 *.js linguist-vendored=false
 *.css linguist-vendored=false
