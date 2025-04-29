@@ -1,2 +1,2 @@
-dist/js/* linguist-vendored=false
-dist/css/* linguist-vendored=false
+dist/js/* linguist-detectable
+dist/css/* linguist-detectable
