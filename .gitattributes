@@ -1,0 +1,4 @@
+js/*.min.js linguist-generated=true
+css/*.min.css linguist-generated=true
+js/*.min.js linguist-vendored=false
+css/*.min.css linguist-vendored=false
