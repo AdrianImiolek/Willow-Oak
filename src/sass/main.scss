@@ -1,0 +1,396 @@
+@use "components";
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+	color: components.$white-color;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: components.$font-nunito;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.heading {
+	font-family: components.$font-eb-garamond;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.heading-section {
+	margin-top: 2rem;
+	font-size: 4rem;
+	color: components.$white-color;
+}
+
+.section {
+	margin-top: 2rem;
+	padding: 2rem 0;
+}
+
+//NAV
+.nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	padding: 1rem 1rem;
+	background-color: components.$main-color;
+	z-index: 2;
+	&__container {
+		padding: 0.5rem;
+		&--links {
+			position: fixed;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-direction: column;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			right: -110%;
+			text-transform: uppercase;
+			background-color: rgba(components.$secondary-color, 0.95);
+			transition: right 0.3s;
+		}
+		&--active {
+			right: 0;
+		}
+		.nav__img {
+			height: 50px;
+		}
+	}
+
+	&__link {
+		margin: 1rem 0 1rem 1rem;
+		padding: 1rem 2rem 1rem 0;
+		color: components.$white-color;
+		border-bottom: 2px solid components.$main-color;
+		font-size: 2rem;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	&__link:nth-child(even) {
+		border-bottom: 2px solid components.$tertiary-color;
+	}
+
+	&__hamburger {
+		position: absolute;
+		right: 1rem;
+		top: 2.5rem;
+		border: 1px solid components.$white-color;
+		border-radius: 6px;
+		width: 40px;
+		height: 40px;
+		cursor: pointer;
+		z-index: 1000;
+		& i {
+			font-size: 40px;
+		}
+	}
+}
+
+.desktop {
+	display: none;
+}
+
+//HEADER
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 4rem;
+	height: 80vh;
+	background-image: url("../img/hero-img-mobile.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	z-index: -1;
+	&__shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+	&__title {
+		position: relative;
+		font-size: 4rem;
+		color: components.$white-color;
+	}
+	&__introduction {
+		position: relative;
+		margin-top: 2rem;
+		font-size: 2.6rem;
+		color: components.$white-color;
+		text-align: center;
+		line-height: 4rem;
+	}
+}
+
+//ABOUT-US
+
+.about-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: components.$secondary-color;
+
+	&__content {
+		.about-us__img {
+			margin-top: 2rem;
+			width: 100%;
+		}
+	}
+
+	&__text {
+		margin: 1rem 2rem 0;
+		font-size: 1.8rem;
+	}
+
+	&__introduction {
+		margin: 2rem 0;
+		line-height: 3rem;
+	}
+}
+
+//OUR WORKS
+
+.our-works {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: components.$tertiary-color;
+	&__slider {
+		margin: 2rem 0;
+	}
+}
+
+//HOW WE WORK
+
+.how-we-work {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: components.$main-color;
+	font-size: 1.8rem;
+	&__steps {
+		list-style: none;
+	}
+	&__step {
+		margin-top: 3rem;
+	}
+	&__description {
+		margin: 2rem 2rem;
+	}
+	&__text {
+		margin-top: 1rem;
+		line-height: 3rem;
+	}
+}
+
+//INSPIRATIONS
+.inspirations {
+	background-color: components.$secondary-color;
+	&__title {
+		padding: 2rem;
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		gap: 8px;
+		height: 100vh;
+		&-item {
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&:nth-child(1) {
+				grid-column: 1 / span 2;
+				grid-row: 1 / span 2;
+			}
+			&:nth-child(2) {
+				grid-column: 3;
+				grid-row: 1 / span 2;
+			}
+
+			&:nth-child(3) {
+				grid-column: span 3;
+				grid-row: 3 / span 2;
+			}
+
+			&:nth-child(4) {
+				grid-column: 1;
+				grid-row: 5 / span 2;
+			}
+
+			&:nth-child(5) {
+				grid-column: 2 / span 2;
+				grid-row: 5 / span 2;
+			}
+		}
+	}
+}
+
+//FAQ
+
+.faq {
+	background-color: components.$tertiary-color;
+	&__title {
+		text-transform: uppercase;
+	}
+}
+
+//CONTACT
+
+.contact-us {
+	background-color: components.$main-color;
+}
+
+//FOOTER
+
+.footer {
+	background-color: components.$secondary-color;
+	font-size: 1.5rem;
+	&__text {
+		margin-top: 4rem;
+		text-align: center;
+	}
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		margin: 0 1rem;
+	}
+	&__item {
+		width: 100%;
+		&-heading {
+			margin: 2rem 0;
+		}
+		&-list {
+			list-style: none;
+			li {
+				padding: 0.5rem 0;
+			}
+			a {
+				padding: 0.5rem 0;
+				color: components.$white-color;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media (min-width: 400px) {
+	.nav {
+		&__container {
+			&--active {
+				right: -50%;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	// MISC
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
+
+	.header {
+		background-image: url("../img/hero-img.webp");
+	}
+
+	// NAV
+	.nav {
+		&__img {
+			height: 75px;
+		}
+		&-flex__items {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-flex__item {
+			.nav__link {
+				text-transform: uppercase;
+				padding: 3rem 2rem;
+				transition: background 0.3s;
+				border: none;
+				&:hover {
+					background-color: components.$secondary-color;
+					&:nth-child(even) {
+						background-color: components.$tertiary-color;
+					}
+				}
+			}
+		}
+	}
+
+	// ABOUT US
+	.about-us {
+		&__content {
+			padding: 1rem 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.about-us__img {
+				width: 450px;
+				height: 100%;
+				object-fit: fill;
+			}
+		}
+	}
+
+	//INSPIRATIONS
+
+	.inspirations {
+		&__grid {
+			&-item {
+				img {
+					transition: 0.5s;
+					&:hover {
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__items {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+}

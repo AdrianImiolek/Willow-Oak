@@ -1,0 +1,42 @@
+@use "components";
+
+.accordion-btn {
+	margin-top: 2rem;
+	padding: 1rem;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	text-align: left;
+	font-size: 2rem;
+	transition: background-color 0.3s;
+	cursor: pointer;
+	color: components.$white-color;
+	.bx {
+		margin-right: 5px;
+		color: components.$secondary-color;
+	}
+}
+
+.accordion-btn:hover,
+.accordion-btn:focus {
+	background-color: components.$main-color;
+	color: components.$white-color;
+}
+
+.accordion-btn:hover .bx,
+.accordion-btn:focus .bx {
+	color: components.$secondary-color;
+}
+
+.accordion-info {
+	display: none;
+	padding: 1rem 2rem;
+	&-text{
+		margin-left: 2rem;
+		font-size: 1.8rem;
+	}
+}
+
+.active {
+	display: block;
+}
