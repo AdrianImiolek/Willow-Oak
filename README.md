@@ -1,7 +1,3 @@
-## :no_entry: I've used minified css/js files in this repo, that's why HTML counts 100%
-
----
-
 # Willow & Oak 🌿
 
 A clean, responsive front-end website built for a nature-themed brand or business. Designed with a mobile-first approach, this project highlights HTML, CSS, and JavaScript skills for interactive, minimalist web design.
