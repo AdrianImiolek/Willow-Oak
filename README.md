@@ -35,7 +35,7 @@ A clean, responsive front-end website built for a nature-themed brand or busines
 - Focused on **semantic HTML** to improve accessibility and SEO
 - Leveraged **SASS** for better organization and reusability in styles
 - Used **BEM** methodology to create scalable, easy-to-maintain CSS classes
-- Experimented with a **mobile-first approach** to design for smaller screens first
+- Used **mobile-first approach** to design for smaller screens first
 
 ---
 
