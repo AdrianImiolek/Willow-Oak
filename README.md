@@ -1,7 +1,3 @@
-## :no_entry: I've used minified css/js files in this repo, that's why HTML counts 100%
-
----
-
 # Willow & Oak 🌿
 
 A clean, responsive front-end website built for a nature-themed brand or business. Designed with a mobile-first approach, this project highlights HTML, CSS, and JavaScript skills for interactive, minimalist web design.
@@ -39,7 +35,7 @@ A clean, responsive front-end website built for a nature-themed brand or busines
 - Focused on **semantic HTML** to improve accessibility and SEO
 - Leveraged **SASS** for better organization and reusability in styles
 - Used **BEM** methodology to create scalable, easy-to-maintain CSS classes
-- Experimented with a **mobile-first approach** to design for smaller screens first
+- Used **mobile-first approach** to design for smaller screens first
 
 ---
 
