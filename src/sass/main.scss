@@ -319,14 +319,6 @@ body {
 }
 
 @media (min-width: 768px) {
-	// MISC
-	.mobile {
-		display: none;
-	}
-	.desktop {
-		display: block;
-	}
-
 	.header {
 		background-image: url("../img/hero-img.webp");
 	}
@@ -392,5 +384,14 @@ body {
 			flex-direction: row;
 			align-items: flex-start;
 		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
 	}
 }
